@@ -70,7 +70,6 @@ $posts = [
 
         <?php for ($j = 0; $j < count($array); $j++) {
             $post = $array[$j];
-
         ?>
             <h3><?php echo $post["title"] ?></h3>
             <p><strong><?php echo $post["author"] ?></strong></p>
