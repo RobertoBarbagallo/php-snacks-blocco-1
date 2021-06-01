@@ -6,7 +6,6 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
 $name = array_key_exists("name", $_GET) ? $_GET["name"] : '';
 $email = array_key_exists("email", $_GET) ? $_GET["email"] : '';
 $age = array_key_exists("age", $_GET) ? $_GET["age"] : '';
-$control = false;
 $access = "";
 
 if((!$name | strlen($name) < 3) | (!$email | strpos($email, "@") == false | strpos($email, ".") == false) | (!$age | is_numeric($age) == false)){

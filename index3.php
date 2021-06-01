@@ -66,7 +66,6 @@ $posts = [
         $date = $post_keys[$i];
         $array = $posts[$date];
     ?>
-
         <h2><?php echo $date  ?></h2>
 
         <?php for ($j = 0; $j < count($array); $j++) {
@@ -80,8 +79,6 @@ $posts = [
         <?php
         }
         ?>
-
-
     <?php
     }
     ?>
