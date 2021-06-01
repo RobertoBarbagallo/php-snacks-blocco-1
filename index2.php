@@ -8,7 +8,7 @@ $email = array_key_exists("email", $_GET) ? $_GET["email"] : '';
 $age = array_key_exists("age", $_GET) ? $_GET["age"] : '';
 $access = "";
 
-if((!$name | strlen($name) < 3) | (!$email | strpos($email, "@") == false | strpos($email, ".") == false) | (!$age | is_numeric($age) == false)){
+if((!$name || strlen($name) < 3) || (!$email || strpos($email, "@") == false || strpos($email, ".") == false) || (!$age || is_numeric($age) == false)){
     $access = "Accesso negato";
 }else{
     $access = "Accesso consentito";
